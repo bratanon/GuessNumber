@@ -46,6 +46,7 @@ public class GuessNumber {
         System.out.println("Wrong! The random number is higher.");
       }
 
+      scanner.next();
       tries++;
     }
 
