@@ -8,6 +8,11 @@ public class GuessNumber {
    */
   protected static int maxRange = 10;
 
+  /**
+   * The scanner.
+   */
+  private static Scanner scanner;
+
   public static void main(String[] args) {
 
     String userName = getUserName();
@@ -51,6 +56,9 @@ public class GuessNumber {
       System.out.println("The radnom number was " + randomInt);
     }
 
+    // Close the scanner.
+    scanner.close();
+
     System.exit(0);
   }
 
@@ -79,7 +87,11 @@ public class GuessNumber {
    */
   private static Scanner getUserInput(String text) {
     System.out.print(text);
-    Scanner scanner = new Scanner(System.in);
+
+    if (scanner == null) {
+      scanner = new Scanner(System.in);
+    }
+
     return scanner;
   }
 
