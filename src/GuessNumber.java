@@ -17,6 +17,9 @@ public class GuessNumber {
 
     String userName = getUserName();
 
+    System.out.println("Welcome " + userName
+        + ", lets play a game. Guess a number bwtween 1 and 10.");
+
     int randomInt = getRandomNumber(maxRange);
 
     // Control if the user have entered the correct value.
@@ -123,8 +126,10 @@ public class GuessNumber {
    * Get the users name.
    */
   private static String getUserName() {
-    Scanner scanner = getUserInput("What is your name? ");
-    return scanner.nextLine();
+    // Scanner scanner = getUserInput("What is your name? ");
+    // return scanner.nextLine();
+
+    return System.getProperty("user.name");
   }
 
 }
