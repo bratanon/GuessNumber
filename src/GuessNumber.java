@@ -57,7 +57,7 @@ public class GuessNumber {
     // print Game Over and what the random number were.
     if (!passed) {
       System.out.println("Game over!");
-      System.out.println("The radnom number was " + randomInt);
+      System.out.println("The random number was " + randomInt);
     }
 
     // Close the scanner.
