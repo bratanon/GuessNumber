@@ -52,7 +52,7 @@ public class GuessNumber {
       tries++;
     }
 
-    // If the user havent found the correct number after three tries,
+    // If the user haven't found the correct number after three tries,
     // print Game Over and what the random number were.
     if (!passed) {
       System.out.println("Game over!");
